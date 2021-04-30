@@ -46,7 +46,9 @@ def print_column():
     for x in range(len(my_col)):
         print(my_col[x].value)
 
-
+####
+# hey this is a new comment
+####
 # create a new entry
 def create_log():
     my_row = monitors.get_col(1, 'cell', False)
