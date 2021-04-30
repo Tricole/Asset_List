@@ -24,9 +24,17 @@ column_index = {'index': 1,
                 }
 
 
+########
+# Add menu for printing out report based on more gainular data
+# Print screen size from largest to smallest, etc
+########
+
 # print column
 def print_column():
-    col_name = input("What would you like to retrieve?\n"
+    ########
+    # There are too many spaces on line 30 after \n
+    ########
+    col_name = input("What would you like to retrieve?\n   "
                      "1. Index\n"
                      "2. Model\n"
                      "3. Dimension\n"
@@ -38,7 +46,9 @@ def print_column():
     for x in range(len(my_col)):
         print(my_col[x].value)
 
-
+####
+# hey this is a new comment
+####
 # create a new entry
 def create_log():
     my_row = monitors.get_col(1, 'cell', False)
