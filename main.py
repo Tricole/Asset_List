@@ -1,17 +1,48 @@
 import json
+import pygsheets
 
-from openpyxl import load_workbook
+# authorization
+gc = pygsheets.authorize(service_file='/Users/PX11/PycharmProjects/myAssetList/boreal-airway-310911-c6beb5a45ae8.json')
 
-workbook = load_workbook(filename="asset_list.xlsx")
+# open the google spreadsheet (where 'PY to Gsheet Test' is the name of my sheet)
+spreadsheet = gc.open('asset_list')
 
-sheet = workbook.active
-sheet.title = "Monitors"
+# from openpyxl import load_workbook
 
+# workbook = load_workbook(filename="asset_list.xlsx")
+
+# sheet = workbook.active
+# sheet.title = "Monitors"
+
+monitors = spreadsheet.worksheet('index', 0)
+
+column_index = {'index': 1,
+                'model': 2,
+                'dimension': 3,
+                'location': 4,
+                'condition': 5
+                }
+
+
+# print column
+def print_column():
+    col_name = input("What would you like to retrieve?\n"
+                     "1. Index\n"
+                     "2. Model\n"
+                     "3. Dimension\n"
+                     "4. Location\n"
+                     "5. Condition\n")
+
+    # add user input validation
+    my_col = monitors.get_col(column_index[col_name], 'cell', False)
+    for x in range(len(my_col)):
+        print(my_col[x].value)
 
 
 # create a new entry
 def create_log():
-    asset_row = len(sheet["A"]) + 1
+    my_row = monitors.get_col(1, 'cell', False)
+    asset_row = len(my_row) + 1
     print("Please provide details of monitor below")
     model = input("Model: ")
     dimension = int(input("Dimension: "))
@@ -24,13 +55,11 @@ def create_log():
     location_cell = "D" + str(asset_row)
     condition_cell = "E" + str(asset_row)
 
-    sheet[id_cell] = asset_row
-    sheet[model_cell] = model
-    sheet[dimension_cell] = dimension
-    sheet[location_cell] = location
-    sheet[condition_cell] = condition
-
-    workbook.save(filename="asset_list.xlsx")
+    monitors.cell(id_cell).value = asset_row
+    monitors.cell(model_cell).value = model
+    monitors.cell(dimension_cell).value = dimension
+    monitors.cell(location_cell).value = location
+    monitors.cell(condition_cell).value = condition
 
     return
 
@@ -74,10 +103,9 @@ def print_rows():
 
 
 def main():
-    read_log()
+    create_log()
+    # read_log(5)
 
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
-

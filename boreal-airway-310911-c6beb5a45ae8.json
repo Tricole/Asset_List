@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "boreal-airway-310911",
+  "private_key_id": "c6beb5a45ae87e5b8e331dd5f19959d891f3a4e3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD3WQzIoiE/eUpv\nnzU92dUm4jHhzqCXYbqCe3x50hkvsl5bivVUZpBaBucg1cwTyc+JpcjVN1OfNUqC\nrE61bLGWxXXhTgohfCj8Wj4syum0iu8aO0JLgd/H9182PlmUZ3s/qzNWKqBQDoOo\n476k4Km/BQAfPtoHOpYIpDN8dZ4Ga2vVS8TZFjtRYLpZ+DEBg7M+ORKstakyFFis\n9JwSrOe3SQ1g8Zy9VXeWBt2Hpgw9Wt10YESBReFIZi1zBJsNdfrnBUESLzd6Kuys\nJzBigF8O+CtgkBZGyVFj9/vFag4uqkxhr8p1oNx458OMOqxRpmT+vp1H0b7pwY8F\nSIuXt7UHAgMBAAECggEAFBN5mCdLWjg2tHdQU6QvStKn3dNu8W/l5YVZsGw/IxdF\nKq+irfu30mF7t7c4CJB5dItXkQbGlhuLNVlVoiAft0RxBvKAnAB/NcxVU5QSAqzB\nhM2JL1EWoB0R8KMq6NgQBuDsb8f8mcLefizODS/hrIwesGqM48f7jtlVByW8x88e\nE2VDxkPEdmQh2CAXGkbGFMGLyXbai4+i5Fw1q3SRKckOfZPFw6cZPRzdZxH9KDN6\nzn4hlH2GyYb0Bv3bB5uBo8bZs9dvS8e/hzbz5xeI5RZXg9sAgj08CCoA3oj9dvT+\nMSOfje60lMYDMyJR+1Det++7/pQcgJdTh6r9/4TSwQKBgQD8xkY8D9/3c6ClRDCS\nrOUDdF7p3Y2NjZZYrlOmQxEqt4IQyimCeBiiqU9o4iyjre0ePBFFNl2iAixBo8F0\nUk3u3zCdmBK1q7QLJ3JBo1cVth4mhEYmJbtJodIkk1+rvo9Vr2feMQs4YxhtC5c8\nruboLPafFnQKi2qZ/DyPQcOMFwKBgQD6gQxwtqALOty45QwG8IXmg8QfndgvjADR\nT/D6D+0Cim9Jh03s7lgXrohMk4lPr5Qab80d5zNLetMlDO8OudCvkPeSPx4vUtuY\nMRJ378vC+wKLYVE0HrmaimI8z/dDKIkV6HKwnNXx8lQKHnOkHGcHm+wPFg6pRAG8\nU6ZLdoMEkQKBgEPOPBDogT+zuKgcfpsZ3eTrVnqNf+c0z9vCB5ZV70jyKOWwFSp2\nZMVdfXu5EBhoE29E1a0nRD6tLon9D2vQmC83l6buoDYzdPx4/GE3G6krTTMv0FFz\nVaYOznwZPFSprXFiuA4WQdhCXM8DiPIySKaHSTCrqT0a4OGlk+kpzvbJAoGAK2Iq\nG2MleIxrKYJRgOoq5m8viiI2DJX8lkN4Ana7n1MGTv+l2UC19PP/GvP6Ndi8l4+B\nQIqH8ayF4MbKqAw6Pg2nMqbHvX5mFYd6IVdgPJZoLGdgPtyLXF5XAR0rP3BHvYmS\nQ1AGJW7IazA26tcYaNLyIPK6+0mR22HJTQxrSGECgYEA9BbA62vj70qQpSynKoof\ngMjfWLPqijcncNQLPiSf2kvgEbZE9gegrUU6mql3GGYTbeNhKlXPIkE669Gt3cUV\ng6A2fTNZCaa8MPYtreJwnhgiHzDViZJvFVOjkCizP4P0TKUjI/OsQ49Q42HI2a8N\nPIUPJ1kiuXVvC3Pmdt3WEIs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tricole@boreal-airway-310911.iam.gserviceaccount.com",
+  "client_id": "115578030238687438892",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tricole%40boreal-airway-310911.iam.gserviceaccount.com"
+}
