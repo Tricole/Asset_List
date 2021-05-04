@@ -1,0 +1,10 @@
+Here are a few suggestions I would reccomend you think about when moving forward with this project
+
+1. Think broad. You are on the right track with how you solve the issues of reading and writing to the right cells. But imo, you do not think about how the function will work when you start dealing with multiple sheets. I think a good idea for you is to always think that the the function will come with the right data. That way you can assume that everything is in place, and focus on getting the job done!
+2. Think about loops! You might have noticed that on the most recent commit (the one you are probably looking at) that I have reduced a lot of your code down from 10-15 lines of code, to just a few. Anytime you do something more than once, there could be a loop that does it for you!
+3. What about the data. I am not sure how to explain this one, but here I go... Your data needs to be curated in the right way so that it is reusable and dynamic. I saw a few places that you had created small dicts but that was not enough. I have proposed a simple structure in main(). This structure could work well for multipl sheets with different numbers of columns. Furthermore, I would go as far as to say that this data could be stored in another file, with a function to retrieve it once the program starts... just to keep things clean.
+4. Erase unwanted code! I noticed, there was a lot of code that was commented out. just get rid of it and then you can rewrite it later if need be.
+5. Build the worksheet inside the function and assume the function will get passed the name of the worksheet to use. This goes back to point #1, you want to make functions that can handle any worksheet at any time!
+
+TODO:
+1. I think your biggest issues
