@@ -6,5 +6,14 @@ Here are a few suggestions I would reccomend you think about when moving forward
 4. Erase unwanted code! I noticed, there was a lot of code that was commented out. just get rid of it and then you can rewrite it later if need be.
 5. Build the worksheet inside the function and assume the function will get passed the name of the worksheet to use. This goes back to point #1, you want to make functions that can handle any worksheet at any time!
 
+
+Something I noticed:
+Your 2 functions print_column() and read_log() are really similar function, I am not sure if there is any overlapping functionality that you can extract from both. If you could find the similar steps in both functions, that would allow you to make one function that does both?
+Think about how each function know what it is doing....
+print_column() is much more reasonable because the user just needs to know what kind of property to sort/display for.
+In the read_log() function, the user needs to know the exact row that coorisponds to the product...and if they know the exact rowm then would they not just be visually examining the spreadsheet?
+
+
 TODO:
-1. I think your biggest issues
+1. Build a function to be able to switch which worksheet is accessed (monitors, cables, towers, etc)
+2. I would say being able really build out the print_column() to handle multiple workheets AND handle multiple search categories, say (search for monitor that is 25 inches and under 4 years old). THis would really bring your project along.
